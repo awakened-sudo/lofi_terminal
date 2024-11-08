@@ -1,0 +1,11 @@
+.terminal {
+  height: calc(100vh - 7.8rem);
+  padding: 2rem;
+}
+
+@media only screen and (max-width: 920px) {
+  .terminal {
+    padding: 1rem;
+    height: calc(100vh - 8.8rem);
+  }
+}

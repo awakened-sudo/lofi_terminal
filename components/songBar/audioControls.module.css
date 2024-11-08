@@ -1,0 +1,55 @@
+.audioControlsRight, .audioControlsCenter, .audioControlsLeft {
+  display: flex;
+  width:  100%;
+}
+
+.audioControlsLeft {
+  justify-content: start;
+  flex-direction: column;
+}
+
+.audioControlsCenter {
+  justify-content: center;
+}
+
+.audioControlsRight {
+  justify-content: end;
+}
+
+.audioControlsCenter .prev svg,
+.audioControlsCenter .next svg {
+  width: 40px;
+  height: 40px;
+}
+
+.audioControlsCenter .play svg,
+.audioControlsCenter .pause svg {
+  height: 45px;
+  width: 45px;
+}
+
+.audioControlsRight .volumeUp svg,
+.audioControlsRight .volumeDown svg {
+  width: 32px;
+  height: 32px;
+}
+
+.audioControlsRight path, .audioControlsCenter path {
+  fill: white;
+}
+
+.prev, .next, .play, .pause, .volumeUp, .volumeDown {
+  cursor: pointer;
+  border: none;
+  background-color: inherit;
+}
+
+.currentlyPlaying {
+  margin: 0 0 0.4rem 0;
+}
+
+.bottom {
+  margin: 0.4rem 0 0 0;
+}
+
+

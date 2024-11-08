@@ -1,0 +1,58 @@
+.songBar {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+  height: 6.5rem;
+  position: fixed;
+  bottom: 1.3rem;
+  width: 100%;
+  border-top: 1px solid white;
+}
+
+.left {
+  margin-left: 5rem;
+  width: calc(100%/3);
+}
+
+.right {
+  margin-right: 5rem;
+  justify-content: end;
+}
+
+.center {
+  justify-content: center;
+}
+
+.center, .right, .left {
+  flex-grow: 1;
+  flex-basis: 0;
+}
+
+@media only screen and (max-width: 920px) {
+  .songBar {
+    height: 7.5rem;
+  }
+  .left {
+    margin-left: 1rem;
+  }
+  .right {
+    margin-right: 1rem;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .songBar {
+    height: 8.5rem;
+  }
+  .left {
+    margin-left: 0.4rem;
+  }
+  .right {
+    margin-right: 0.4rem;
+  }
+  .currentlyPlaying {
+    display: none;
+  }
+}
